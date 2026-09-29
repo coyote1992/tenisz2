@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T08:51:35+00:00",
+  "title": "Design System: Next Tenisz Akadémia",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#faf8f4",
+        "oklch": "oklch(98.0% 0.006 84.6)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#262522",
+          "#43423f",
+          "#63615e",
+          "#84827e",
+          "#a7a5a1",
+          "#cbc9c5",
+          "#f0eeea"
+        ]
+      },
+      "sand": {
+        "role": "neutral",
+        "displayName": "Sand",
+        "canonical": "#f4efe7",
+        "oklch": "oklch(95.4% 0.012 79.8)",
+        "tonalRamp": [
+          "#0e0b06",
+          "#28241f",
+          "#45413b",
+          "#65615a",
+          "#86827a",
+          "#a9a49d",
+          "#cdc8c1",
+          "#f3eee6"
+        ]
+      },
+      "linen": {
+        "role": "neutral",
+        "displayName": "Linen",
+        "canonical": "#fdfcfa",
+        "oklch": "oklch(99.1% 0.003 84.6)",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#262523",
+          "#434240",
+          "#62615f",
+          "#838280",
+          "#a6a5a3",
+          "#cac9c7",
+          "#efeeec"
+        ]
+      },
+      "card-white": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e8e4df",
+        "oklch": "oklch(92.1% 0.008 73.7)",
+        "tonalRamp": [
+          "#0d0b08",
+          "#272521",
+          "#45413d",
+          "#64615c",
+          "#85827d",
+          "#a8a4a0",
+          "#ccc8c4",
+          "#f2eee9"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#d9d3cb",
+        "oklch": "oklch(86.9% 0.013 75.4)",
+        "tonalRamp": [
+          "#0e0a06",
+          "#29241e",
+          "#46413b",
+          "#666059",
+          "#87817a",
+          "#aaa49c",
+          "#cec8c0",
+          "#f4ede5"
+        ]
+      },
+      "ink-navy": {
+        "role": "neutral",
+        "displayName": "Ink Navy",
+        "canonical": "#1b3a5c",
+        "oklch": "oklch(34.3% 0.070 252.4)",
+        "tonalRamp": [
+          "#000a24",
+          "#062646",
+          "#244466",
+          "#436488",
+          "#6485ac",
+          "#85a8d1",
+          "#a9cdf7",
+          "#e3f0ff"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#4a5d73",
+        "oklch": "oklch(47.1% 0.043 252.4)",
+        "tonalRamp": [
+          "#010b1c",
+          "#152639",
+          "#314458",
+          "#506379",
+          "#70849c",
+          "#92a7c0",
+          "#b6cce5",
+          "#e4f0fe"
+        ]
+      },
+      "muted-slate": {
+        "role": "neutral",
+        "displayName": "Muted Slate",
+        "canonical": "#62707f",
+        "oklch": "oklch(53.9% 0.029 250.2)",
+        "tonalRamp": [
+          "#030c17",
+          "#1a2633",
+          "#364351",
+          "#556371",
+          "#768494",
+          "#98a7b7",
+          "#bccbdc",
+          "#e3f0fe"
+        ]
+      },
+      "deep-navy": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#0f2237",
+        "oklch": "oklch(24.8% 0.047 252.4)",
+        "tonalRamp": [
+          "#000b1e",
+          "#13263b",
+          "#2f445b",
+          "#4e637c",
+          "#6e859f",
+          "#90a7c3",
+          "#b4cce8",
+          "#e4f0fe"
+        ]
+      },
+      "navy-panel": {
+        "role": "neutral",
+        "displayName": "Navy Panel",
+        "canonical": "#1b3354",
+        "oklch": "oklch(31.9% 0.067 256.7)",
+        "tonalRamp": [
+          "#000926",
+          "#0d2545",
+          "#2a4365",
+          "#486387",
+          "#6984aa",
+          "#8aa7cf",
+          "#aecbf5",
+          "#e5effe"
+        ]
+      },
+      "flow-navy": {
+        "role": "neutral",
+        "displayName": "Flow Navy",
+        "canonical": "#0c1d31",
+        "oklch": "oklch(22.8% 0.045 253.7)",
+        "tonalRamp": [
+          "#000b1e",
+          "#15263b",
+          "#31435a",
+          "#4f637b",
+          "#70849d",
+          "#92a7c2",
+          "#b5cbe7",
+          "#e4f0ff"
+        ]
+      },
+      "court-teal": {
+        "role": "primary",
+        "displayName": "Court Teal",
+        "canonical": "#267272",
+        "oklch": "oklch(50.7% 0.073 195.1)",
+        "tonalRamp": [
+          "#000f0f",
+          "#032b2c",
+          "#004d4d",
+          "#216e6e",
+          "#479090",
+          "#6bb4b3",
+          "#8fd8d8",
+          "#b4fffe"
+        ]
+      },
+      "court-teal-deep": {
+        "role": "primary",
+        "displayName": "Court Teal Deep",
+        "canonical": "#1e5f5f",
+        "oklch": "oklch(44.5% 0.064 195.1)",
+        "tonalRamp": [
+          "#000f0f",
+          "#002c2c",
+          "#014c4d",
+          "#2e6d6d",
+          "#518f8e",
+          "#74b2b1",
+          "#97d7d6",
+          "#bcfdfc"
+        ]
+      },
+      "lagoon-teal": {
+        "role": "primary",
+        "displayName": "Lagoon Teal",
+        "canonical": "#5fc9c9",
+        "oklch": "oklch(77.4% 0.098 195.3)",
+        "tonalRamp": [
+          "#000f0f",
+          "#002c2c",
+          "#014c4d",
+          "#136f6f",
+          "#1c9495",
+          "#4cb8b8",
+          "#74dddd",
+          "#b6fefe"
+        ]
+      },
+      "teal-wash": {
+        "role": "primary",
+        "displayName": "Teal Wash",
+        "canonical": "#e6f1f0",
+        "oklch": "oklch(95.0% 0.012 190.4)",
+        "tonalRamp": [
+          "#060d0c",
+          "#1f2726",
+          "#3b4443",
+          "#5a6363",
+          "#7b8584",
+          "#9da7a7",
+          "#c1cccb",
+          "#e6f1f0"
+        ]
+      },
+      "clay": {
+        "role": "secondary",
+        "displayName": "Clay",
+        "canonical": "#c4633a",
+        "oklch": "oklch(60.7% 0.136 42.5)",
+        "tonalRamp": [
+          "#1f0000",
+          "#431300",
+          "#6f2803",
+          "#9e4013",
+          "#c4633a",
+          "#eb865d",
+          "#fcb79b",
+          "#feeae1"
+        ]
+      },
+      "error-on-navy": {
+        "role": "status",
+        "displayName": "Error on Navy",
+        "canonical": "#f08b6b",
+        "oklch": "oklch(73.8% 0.131 38.3)",
+        "tonalRamp": [
+          "#210000",
+          "#461000",
+          "#732305",
+          "#9d4021",
+          "#c36344",
+          "#ea8666",
+          "#fbb6a0",
+          "#fee9e3"
+        ]
+      },
+      "ball-red": {
+        "role": "data",
+        "displayName": "Ball Red (Piros)",
+        "canonical": "#d9443a",
+        "oklch": "oklch(59.9% 0.187 28.0)",
+        "tonalRamp": [
+          "#220000",
+          "#4e0001",
+          "#800407",
+          "#b31918",
+          "#dc473d",
+          "#fd7567",
+          "#feb3a9",
+          "#fee9e6"
+        ]
+      },
+      "ball-orange": {
+        "role": "data",
+        "displayName": "Ball Orange (Narancs)",
+        "canonical": "#eb8a2f",
+        "oklch": "oklch(72.3% 0.154 58.6)",
+        "tonalRamp": [
+          "#1a0400",
+          "#3c1b00",
+          "#643300",
+          "#8f4e0c",
+          "#be6a13",
+          "#ea8a2e",
+          "#fbb986",
+          "#feeadc"
+        ]
+      },
+      "ball-green": {
+        "role": "data",
+        "displayName": "Ball Green (Zöld)",
+        "canonical": "#9ccf3c",
+        "oklch": "oklch(79.1% 0.179 126.9)",
+        "tonalRamp": [
+          "#050f00",
+          "#1c2b00",
+          "#344b03",
+          "#4f6d13",
+          "#6b911c",
+          "#87b819",
+          "#aade4d",
+          "#d9fea7"
+        ]
+      },
+      "ball-yellow": {
+        "role": "data",
+        "displayName": "Ball Yellow (Nagyok)",
+        "canonical": "#e3e64a",
+        "oklch": "oklch(89.6% 0.171 110.5)",
+        "tonalRamp": [
+          "#0d0c00",
+          "#272700",
+          "#454502",
+          "#656611",
+          "#87881a",
+          "#abad13",
+          "#d0d22e",
+          "#f5f860"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero headline only; two centred lines over the drone video, settles from blur on load."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Inner page hero titles, left-aligned over a scrimmed photo."
+      },
+      "headline-section": {
+        "displayName": "Section Headline",
+        "purpose": "Section h2; XL variant clamp(2.4rem, 4.6vw, 3.6rem) for band statements."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card, aside and side-card titles."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Step titles, h4, schedule row heads."
+      },
+      "price": {
+        "displayName": "Price Figure",
+        "purpose": "Prices in price tables, tabular lining numerals; unit in small DM Sans."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Section intros in ink-soft, max 62ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text; prose max 66ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Captions, fact rows, footer, form help, season bar."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Buttons and teal text links."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase tracked label for table column heads, the flow summary label and a speaker's name under a quote. Not a kicker above headings."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 1px 2px rgba(15, 34, 55, 0.04), 0 8px 24px -12px rgba(15, 34, 55, 0.12)",
+        "purpose": "Linked-card hover and the sticky detail aside only."
+      },
+      {
+        "name": "float",
+        "value": "0 2px 6px rgba(10, 22, 40, 0.12), 0 24px 48px -16px rgba(10, 22, 40, 0.45)",
+        "purpose": "Surfaces floating over photography or navy: hero path cards, booking flow shell."
+      },
+      {
+        "name": "header-settle",
+        "value": "0 6px 24px -18px rgba(15, 34, 55, 0.35)",
+        "purpose": "Sticky header once the page has scrolled, with its hairline."
+      },
+      {
+        "name": "focus-halo-navy",
+        "value": "0 0 0 3px rgba(95, 201, 201, 0.2)",
+        "purpose": "Focused field in the request flow."
+      },
+      {
+        "name": "hero-text",
+        "value": "0 2px 30px rgba(10, 22, 40, 0.35)",
+        "purpose": "Text shadow on the hero headline over video."
+      }
+    ],
+    "scrims": [
+      {
+        "name": "hero",
+        "value": "linear-gradient(180deg, rgba(15,34,55,0.55) 0%, rgba(15,34,55,0.35) 38%, rgba(15,34,55,0.78) 100%), rgba(19,41,74,0.18)"
+      },
+      {
+        "name": "page-hero",
+        "value": "linear-gradient(90deg, rgba(15,34,55,0.88) 0%, rgba(15,34,55,0.62) 55%, rgba(15,34,55,0.35) 100%)"
+      },
+      {
+        "name": "band",
+        "value": "radial-gradient(ellipse 60% 55% at 50% 50%, rgba(15,34,55,0.55), transparent 75%), rgba(15,34,55,0.58)"
+      },
+      {
+        "name": "cta-band",
+        "value": "linear-gradient(180deg, rgba(15,34,55,0.3), rgba(15,34,55,0.85)) over the photo at 40% opacity"
+      },
+      {
+        "name": "footer-rule",
+        "value": "3px linear-gradient(90deg, #267272 0%, #c4633a 50%, #267272 100%)"
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Default easing for entrances, hovers, lifts and reveals."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Line drawing: hero underline and sketches."
+      },
+      {
+        "name": "state-fast",
+        "value": "160–180ms",
+        "purpose": "Colour and border changes on buttons, chips, fields."
+      },
+      {
+        "name": "lift",
+        "value": "240–260ms",
+        "purpose": "Card and path-card lift, nav underline draw."
+      },
+      {
+        "name": "hero-rise",
+        "value": "1100ms, 90ms stagger, from translateY(18px) blur(8px)",
+        "purpose": "The page's one orchestrated moment: hero headline, lede and paths settle."
+      },
+      {
+        "name": "photo-reveal",
+        "value": "clip-path inset 18% to 0 over 1100ms, image scale 1.08 to 1 over 1400ms",
+        "purpose": "Photos uncover once on entering view."
+      },
+      {
+        "name": "sketch-draw",
+        "value": "stroke-dashoffset 1 to 0 over 1600ms",
+        "purpose": "Sketches draw once on first view."
+      },
+      {
+        "name": "panel-in",
+        "value": "320ms, translateX(±14px) blur(3px)",
+        "purpose": "Request-flow step change, direction-aware."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) buttons and chips, scale(0.985) cards and choices",
+        "purpose": "Active press feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "xs",
+        "value": "420px",
+        "purpose": "Header request button hides (menu carries it)."
+      },
+      {
+        "name": "sm",
+        "value": "620px",
+        "purpose": "Card grids go to one column."
+      },
+      {
+        "name": "md",
+        "value": "720px",
+        "purpose": "Schedule table becomes card list; ruled steps reflow."
+      },
+      {
+        "name": "split",
+        "value": "900px",
+        "purpose": "Splits stack; 3-up grids go to 2."
+      },
+      {
+        "name": "detail",
+        "value": "960px",
+        "purpose": "Detail aside and next-grid stack; footer to 2 columns."
+      },
+      {
+        "name": "nav",
+        "value": "1100px",
+        "purpose": "Desktop nav yields to full-screen navy menu; 4-up grids go to 2."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Court-teal action for the training request; the only filled button on light grounds.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Jelentkezés</a>",
+      "css": ".ds-btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:46px; padding:0 20px; border-radius:var(--radius-s, 6px); border:1px solid transparent; background:var(--teal, #267272); color:#fff; font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); font-weight:600; font-size:0.9375rem; line-height:1; text-decoration:none; white-space:nowrap; transition:background-color 180ms ease, transform 160ms cubic-bezier(0.23,1,0.32,1); } .ds-btn:hover { background:var(--teal-hover, #1e5f5f); } .ds-btn:active { transform:scale(0.97); } .ds-btn:focus-visible { outline:2px solid var(--teal, #267272); outline-offset:3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "White, hairline-bordered secondary action; used for Hella court booking on light grounds.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Pályafoglalás (Hella)</a>",
+      "css": ".ds-btn-ghost { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:0 20px; border-radius:var(--radius-s, 6px); border:1px solid var(--line-strong, #d9d3cb); background:#fff; color:var(--ink, #1b3a5c); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); font-weight:600; font-size:0.9375rem; line-height:1; text-decoration:none; transition:background-color 180ms ease, border-color 180ms ease, transform 160ms cubic-bezier(0.23,1,0.32,1); } .ds-btn-ghost:hover { background:var(--paper, #faf8f4); border-color:var(--ink, #1b3a5c); } .ds-btn-ghost:active { transform:scale(0.97); } .ds-btn-ghost:focus-visible { outline:2px solid var(--teal, #267272); outline-offset:3px; }"
+    },
+    {
+      "name": "Ghost Button on Navy",
+      "kind": "button",
+      "refersTo": "button-ghost-dark",
+      "description": "Transparent outlined action inside navy bands, CTA bands and the mobile menu.",
+      "html": "<div class=\"ds-navy-wrap\"><a class=\"ds-btn-ghost-dark\" href=\"#\">Pályafoglalás</a></div>",
+      "css": ".ds-navy-wrap { background:var(--navy, #0f2237); padding:24px; } .ds-btn-ghost-dark { display:inline-flex; align-items:center; min-height:46px; padding:0 20px; border-radius:var(--radius-s, 6px); border:1px solid rgba(250,248,244,0.28); background:transparent; color:var(--on-navy, #faf8f4); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); font-weight:600; font-size:0.9375rem; line-height:1; text-decoration:none; transition:background-color 180ms ease, border-color 180ms ease; } .ds-btn-ghost-dark:hover { background:rgba(250,248,244,0.08); border-color:rgba(250,248,244,0.6); } .ds-btn-ghost-dark:focus-visible { outline:2px solid var(--teal-light, #5fc9c9); outline-offset:3px; }"
+    },
+    {
+      "name": "Program Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White hairline card with a 16:10 photo head, Cormorant title, tabular fact rows and a teal text link; lifts on hover.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card__media\"></div><div class=\"ds-card__body\"><h3 class=\"ds-card__title\">Good Morning Club</h3><p class=\"ds-card__text\">Reggeli közös mozgás: mobilizálás, nyújtás, keringésfokozás.</p><ul class=\"ds-rows\"><li><span>Időpont</span><span>H–P 7:30</span></li><li><span>Ár</span><span>3 000 Ft</span></li></ul><a class=\"ds-text-link\" href=\"#\">Részletek <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div></article>",
+      "css": ".ds-card { display:flex; flex-direction:column; max-width:340px; background:#fff; border:1px solid var(--line, #e8e4df); border-radius:var(--radius-m, 12px); overflow:hidden; color:var(--ink, #1b3a5c); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); transition:box-shadow 260ms ease, transform 260ms cubic-bezier(0.23,1,0.32,1); } .ds-card:hover { box-shadow:0 1px 2px rgba(15,34,55,0.04), 0 8px 24px -12px rgba(15,34,55,0.12); transform:translateY(-2px); } .ds-card__media { aspect-ratio:16/10; background:linear-gradient(160deg, #c9b79a, #8a6a4a 60%, #4c3a2a); } .ds-card__body { display:flex; flex-direction:column; gap:10px; padding:22px 22px 24px; } .ds-card__title { margin:0; font-family:var(--font-display, 'Cormorant Garamond', Georgia, serif); font-size:1.6rem; font-weight:400; line-height:1.1; letter-spacing:-0.01em; } .ds-card__text { margin:0; font-size:0.9063rem; line-height:1.5; color:var(--ink-soft, #4a5d73); } .ds-rows { list-style:none; margin:6px 0 0; padding:10px 0 0; border-top:1px solid var(--line, #e8e4df); display:grid; gap:4px; font-size:0.875rem; } .ds-rows li { display:flex; justify-content:space-between; gap:12px; color:var(--ink-soft, #4a5d73); } .ds-rows li > :last-child { color:var(--ink, #1b3a5c); font-weight:500; font-variant-numeric:tabular-nums lining-nums; } .ds-text-link { display:inline-flex; align-items:center; gap:6px; margin-top:16px; color:var(--teal, #267272); font-weight:600; font-size:0.9375rem; text-decoration:none; } .ds-text-link svg { transition:transform 200ms cubic-bezier(0.23,1,0.32,1); } .ds-text-link:hover svg { transform:translateX(3px); } .ds-text-link:focus-visible { outline:2px solid var(--teal, #267272); outline-offset:3px; border-radius:4px; }"
+    },
+    {
+      "name": "Price Card",
+      "kind": "card",
+      "refersTo": "price-card",
+      "description": "Hairline card holding a ruled price table: time band and detail left, Cormorant tabular figure right.",
+      "html": "<div class=\"ds-price\"><p class=\"ds-price__kind\">Alkalmi</p><ul class=\"ds-price__table\"><li><span class=\"ds-price__band\">Hétköznap 7–10</span><span class=\"ds-price__detail\">Reggeli sáv</span><span class=\"ds-price__fig\">5 200 <small>Ft/óra</small></span></li><li><span class=\"ds-price__band\">Hétköznap 14–21</span><span class=\"ds-price__detail\">Délutáni és esti sáv</span><span class=\"ds-price__fig\">6 000 <small>Ft/óra</small></span></li></ul></div>",
+      "css": ".ds-price { max-width:380px; background:#fff; border:1px solid var(--line, #e8e4df); border-radius:var(--radius-m, 12px); padding:28px; display:grid; gap:8px; color:var(--ink, #1b3a5c); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); } .ds-price__kind { margin:0; font-family:var(--font-display, 'Cormorant Garamond', Georgia, serif); font-size:2rem; font-weight:300; line-height:1; } .ds-price__table { list-style:none; margin:14px 0 0; padding:0; border-top:1px solid var(--line, #e8e4df); } .ds-price__table li { display:grid; grid-template-columns:1fr auto; gap:2px 16px; padding:14px 0; border-bottom:1px solid var(--line, #e8e4df); } .ds-price__band { font-weight:600; font-size:0.9375rem; } .ds-price__detail { grid-column:1; font-size:0.8438rem; color:var(--muted, #62707f); } .ds-price__fig { grid-row:1 / span 2; grid-column:2; align-self:center; font-family:var(--font-display, 'Cormorant Garamond', Georgia, serif); font-size:1.6rem; font-weight:400; font-variant-numeric:lining-nums tabular-nums; white-space:nowrap; } .ds-price__fig small { font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); font-size:0.75rem; color:var(--muted, #62707f); }"
+    },
+    {
+      "name": "Hero Path Card",
+      "kind": "custom",
+      "refersTo": "path-card",
+      "description": "Frosted paper card floating over the navy-scrimmed drone video; one of the two doors.",
+      "html": "<div class=\"ds-hero-bg\"><a class=\"ds-path\" href=\"#\"><span class=\"ds-path__title\">Pályát foglalnék <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span><span class=\"ds-path__text\">Négy salakpálya, online foglalás a Hellán.</span></a></div>",
+      "css": ".ds-hero-bg { padding:32px; background:linear-gradient(180deg, rgba(15,34,55,0.55), rgba(15,34,55,0.78)), linear-gradient(135deg, #3f6a4a, #a9774f); } .ds-path { display:grid; gap:6px; max-width:320px; padding:18px 20px; border-radius:var(--radius-m, 12px); background:rgba(250,248,244,0.9); color:var(--ink, #1b3a5c); text-decoration:none; border:1px solid rgba(255,255,255,0.6); box-shadow:0 2px 6px rgba(10,22,40,0.12), 0 24px 48px -16px rgba(10,22,40,0.45); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); transition:background-color 200ms ease, transform 240ms cubic-bezier(0.23,1,0.32,1); } .ds-path:hover { background:rgba(255,255,255,0.98); transform:translateY(-2px); } .ds-path:focus-visible { outline:2px solid var(--teal-light, #5fc9c9); outline-offset:3px; } .ds-path__title { display:flex; justify-content:space-between; align-items:center; gap:12px; font-weight:600; font-size:1.02rem; } .ds-path__title svg { color:var(--teal, #267272); transition:transform 200ms cubic-bezier(0.23,1,0.32,1); } .ds-path:hover .ds-path__title svg { transform:translateX(3px); } .ds-path__text { font-size:0.875rem; line-height:1.45; color:var(--ink-soft, #4a5d73); }"
+    },
+    {
+      "name": "Field on Navy",
+      "kind": "input",
+      "refersTo": "input-on-navy",
+      "description": "Request-flow text field: translucent paper wash on flow navy, lagoon-teal focus halo.",
+      "html": "<div class=\"ds-flow\"><label class=\"ds-field\"><span class=\"ds-field__label\">Telefonszám</span><input class=\"ds-input\" type=\"tel\" placeholder=\"+36 30 123 4567\"></label></div>",
+      "css": ".ds-flow { background:#0c1d31; padding:24px; border-radius:var(--radius-l, 16px); color:var(--on-navy, #faf8f4); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); } .ds-field { display:grid; gap:8px; } .ds-field__label { font-weight:600; font-size:0.9063rem; } .ds-input { width:100%; min-height:46px; padding:10px 14px; border-radius:var(--radius-s, 6px); border:1px solid rgba(250,248,244,0.2); background:rgba(250,248,244,0.05); color:var(--on-navy, #faf8f4); font:inherit; font-size:1rem; caret-color:var(--teal-light, #5fc9c9); transition:border-color 160ms ease, background-color 160ms ease; } .ds-input::placeholder { color:rgba(250,248,244,0.5); } .ds-input:hover { border-color:rgba(250,248,244,0.4); } .ds-input:focus { outline:none; border-color:var(--teal-light, #5fc9c9); background:rgba(250,248,244,0.08); box-shadow:0 0 0 3px rgba(95,201,201,0.2); } .ds-input[aria-invalid='true'] { border-color:#f08b6b; }"
+    },
+    {
+      "name": "Choice Chip on Navy",
+      "kind": "chip",
+      "refersTo": "chip-on-navy",
+      "description": "Selectable option in the request flow; checked state gains a lagoon border, wash and leading dot.",
+      "html": "<div class=\"ds-flow-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked> Hétfő</label><label class=\"ds-chip\"><input type=\"checkbox\"> Kedd</label><label class=\"ds-chip\"><input type=\"checkbox\"> Szerda</label></div>",
+      "css": ".ds-flow-chips { display:flex; flex-wrap:wrap; gap:8px; background:#0c1d31; padding:24px; font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); } .ds-chip { position:relative; display:inline-flex; align-items:center; gap:6px; min-height:40px; padding:0 14px; border-radius:var(--radius-s, 6px); border:1px solid rgba(250,248,244,0.2); color:var(--on-navy, #faf8f4); font-size:0.875rem; cursor:pointer; user-select:none; transition:border-color 160ms ease, background-color 160ms ease, transform 140ms cubic-bezier(0.23,1,0.32,1); } .ds-chip:hover { border-color:rgba(250,248,244,0.45); } .ds-chip:active { transform:scale(0.97); } .ds-chip input { position:absolute; opacity:0; pointer-events:none; } .ds-chip:has(input:checked) { border-color:var(--teal-light, #5fc9c9); background:rgba(95,201,201,0.16); } .ds-chip:has(input:checked)::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--teal-light, #5fc9c9); } .ds-chip:has(input:focus-visible) { outline:2px solid var(--teal-light, #5fc9c9); outline-offset:2px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "season-bar",
+      "description": "Ink season bar over the sticky paper-glass header: clay-ball wordmark, underline-drawing nav, ghost Hella and teal request buttons.",
+      "html": "<div class=\"ds-shell\"><div class=\"ds-season\">Nyári pályaszezon 2026.10.12-ig · <a href=\"#\">Pályafoglalás</a></div><header class=\"ds-header\"><a class=\"ds-wordmark\" href=\"#\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 32 32\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"16\" cy=\"16\" r=\"12.5\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M6.2 9.6c4.6 2 6.6 6.4 5.3 13.6M25.8 22.4c-4.6-2-6.6-6.4-5.3-13.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"/></svg><span class=\"ds-wordmark__text\"><span class=\"ds-wordmark__name\">Next Tenisz</span><span class=\"ds-wordmark__sub\">Akadémia · Normafa</span></span></a><nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Tenisz</a><a href=\"#\">Személyi edzés</a><a href=\"#\">Pályabérlés</a></nav><a class=\"ds-hbtn ds-hbtn--ghost\" href=\"#\">Hella</a><a class=\"ds-hbtn\" href=\"#\">Jelentkezés</a></header></div>",
+      "css": ".ds-shell { font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); color:var(--ink, #1b3a5c); } .ds-season { background:var(--ink, #1b3a5c); color:var(--on-navy, #faf8f4); font-size:0.8125rem; text-align:center; padding:8px 16px; } .ds-season a { color:var(--teal-light, #5fc9c9); font-weight:600; text-decoration:none; } .ds-season a:hover { text-decoration:underline; } .ds-header { display:flex; align-items:center; gap:24px; height:64px; padding:0 24px; background:rgba(250,248,244,0.92); backdrop-filter:saturate(1.4) blur(12px); border-bottom:1px solid var(--line, #e8e4df); } .ds-wordmark { display:inline-flex; align-items:center; gap:10px; color:var(--ink, #1b3a5c); text-decoration:none; margin-right:auto; } .ds-wordmark svg { color:var(--clay, #c4633a); } .ds-wordmark__text { display:grid; line-height:1; } .ds-wordmark__name { font-family:var(--font-display, 'Cormorant Garamond', Georgia, serif); font-size:1.3rem; font-weight:500; letter-spacing:-0.01em; } .ds-wordmark__sub { font-family:var(--font-display, 'Cormorant Garamond', Georgia, serif); font-size:0.66rem; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; margin-top:3px; } .ds-nav { display:flex; gap:22px; } .ds-nav a { position:relative; padding:6px 0; font-size:0.9375rem; color:var(--ink, #1b3a5c); text-decoration:none; } .ds-nav a::after { content:''; position:absolute; left:0; right:0; bottom:0; height:1px; background:currentColor; transform:scaleX(0); transform-origin:left; transition:transform 240ms cubic-bezier(0.23,1,0.32,1); } .ds-nav a:hover::after, .ds-nav a[aria-current='page']::after { transform:scaleX(1); } .ds-nav a:focus-visible, .ds-hbtn:focus-visible { outline:2px solid var(--teal, #267272); outline-offset:3px; border-radius:4px; } .ds-hbtn { display:inline-flex; align-items:center; min-height:38px; padding:0 14px; border-radius:var(--radius-s, 6px); border:1px solid transparent; background:var(--teal, #267272); color:#fff; font-weight:600; font-size:0.875rem; text-decoration:none; transition:background-color 180ms ease, border-color 180ms ease; } .ds-hbtn:hover { background:var(--teal-hover, #1e5f5f); } .ds-hbtn--ghost { background:#fff; color:var(--ink, #1b3a5c); border-color:var(--line-strong, #d9d3cb); } .ds-hbtn--ghost:hover { background:var(--paper, #faf8f4); border-color:var(--ink, #1b3a5c); }"
+    },
+    {
+      "name": "Navy Side Card",
+      "kind": "card",
+      "refersTo": "side-card",
+      "description": "Raised panel inside navy bands, opened by the 36px clay hairline; the canonical use of clay as a line.",
+      "html": "<div class=\"ds-navy-band\"><div class=\"ds-side\"><h3>Mi történik ezután?</h3><p>Munkatársunk egy munkanapon belül felveszi veled a kapcsolatot telefonon vagy e-mailben.</p></div></div>",
+      "css": ".ds-navy-band { background:var(--navy, #0f2237); padding:32px; color:var(--on-navy, #faf8f4); font-family:var(--font-body, 'DM Sans', system-ui, sans-serif); } .ds-side { max-width:360px; background:var(--navy-3, #1b3354); border:1px solid rgba(250,248,244,0.12); border-radius:var(--radius-l, 16px); padding:28px; display:grid; gap:16px; } .ds-side::before { content:''; width:36px; height:1px; background:var(--clay, #c4633a); } .ds-side h3 { margin:0; font-family:var(--font-display, 'Cormorant Garamond', Georgia, serif); font-size:1.6rem; font-weight:400; line-height:1.1; } .ds-side p { margin:0; font-size:0.9375rem; color:rgba(250,248,244,0.74); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Clubhouse on the Hill",
+    "overview": "A calm, coached club site: warm paper pages that read like a well-kept noticeboard, interrupted by deep navy bands that feel like evening on the courts. The world is owner-pinned to the Laguna Beach Tennis Academy register and translated to four clay courts in the Buda woods beside Normafa. The setting carries the premium feel; the interface stays out of its way, stating times, places and prices plainly.\n\nDensity is relaxed on the marketing pages (generous section padding, one idea per band) and firmer where people act: price tables, junior schedules and the four-step request flow use hairline rows, tabular numerals and compact controls. Light Cormorant display headings with tight tracking set the voice; DM Sans does all the working text. Depth comes from alternating grounds (paper, sand, navy) and 1px hairlines, not from stacked shadows. Two local materials make the world its own: topographic contour lines of the hill as the navy-band texture, and hand-drawn pencil sketches (court plan, ball arc, headline underline) that draw themselves once.\n\nThe world refuses the tennis category default: no lime-green sporty banners, no shouting all-caps headlines, no stock \"premium\" gloss.",
+    "keyCharacteristics": [
+      "Paper ground, sand alternates, deep navy bands and footer.",
+      "One action colour: court teal on light, lagoon teal on navy.",
+      "Clay appears only as a line, never as a fill.",
+      "Light, tightly tracked serif display over a clean geometric sans.",
+      "Hairline-bordered white cards; prices and times in tabular figures.",
+      "Real photography in 16px-rounded frames; drone video in the hero.",
+      "Motion happens once: headline settles from blur, photos uncover, sketches draw."
+    ],
+    "rules": [
+      {
+        "name": "The Clay Hairline Rule",
+        "body": "Clay is a line of at most 3px or a stroke in a sketch or mark. It is never a fill, a button, a background or body text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Teals Rule",
+        "body": "Court teal acts on light grounds; lagoon teal acts on navy. Never put court teal on navy or lagoon teal on paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Ground Rule",
+        "body": "Pages sit on paper, sand or navy. White is reserved for surfaces that sit on paper (cards, tables, ghost buttons).",
+        "section": "colors"
+      },
+      {
+        "name": "The Light Voice Rule",
+        "body": "Headings are Cormorant at 300–500 with negative tracking (−0.01 to −0.03em) and balanced wrapping. Never bold a display heading and never set a heading in uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plain Numbers Rule",
+        "body": "Every price, time slot and schedule cell uses tabular lining numerals; right-align figures in row lists.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Doors Rule",
+        "body": "Every major surface ends with both actions available: the request flow (teal button) and Hella court booking (ghost button).",
+        "section": "layout"
+      },
+      {
+        "name": "The Border-First Rule",
+        "body": "Surfaces on paper rest with a 1px hairline and no shadow. Shadow is a response (hover, scroll, sticky) or the mark of something floating over a photo; it is never decoration at rest.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Three Radii Rule",
+        "body": "6px to act, 12px to contain, 16px to frame. Do not introduce in-between radii.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do alternate paper, sand and deep-navy bands to pace a page; end with both doors (request flow and Hella).",
+      "Do keep court teal as the only filled action colour on light grounds and lagoon teal as its counterpart on navy.",
+      "Do set prices, times and schedules in tabular lining numerals, with the figure in Cormorant and the unit in small DM Sans.",
+      "Do frame photographs at 16px, cards at 12px and controls at 6px.",
+      "Do use real photography of the courts, juniors and studio under deep-navy scrims (30–88%) so paper text holds contrast.",
+      "Do let motion happen once and respect reduced motion: headline settles from blur, photos uncover, sketches draw, then everything stays still."
+    ],
+    "donts": [
+      "Don't use lime or tennis-ball green as a brand colour, banner or button; the ball colours exist only as junior-stage data dots.",
+      "Don't set headlines in uppercase or bold; display type stays Cormorant at 300–500.",
+      "Don't fill anything with clay; it is a line.",
+      "Don't add resting shadows to cards on paper, grey shadows, or hard offset shadows.",
+      "Don't make buttons pill-shaped; pills are for tags and focus-area labels only.",
+      "Don't put pure white behind a whole page or section; white is a card surface."
+    ]
+  }
+}
