@@ -19,6 +19,8 @@ export const site = {
     label: "Nyári pályaszezon",
     // Without the closing period: every use appends a suffix ("-ig").
     until: "2026. október 12",
+    // Word joiners keep "12-ig" from breaking at the hyphen.
+    untilIg: "2026. október 12\u2060-\u2060ig",
   },
 } as const;
 

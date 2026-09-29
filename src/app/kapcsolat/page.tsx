@@ -87,7 +87,7 @@ export default function ContactPage() {
                 ))}
               </ul>
               <p className="small muted" style={{ marginTop: 12 }}>
-                {site.season.label}: {site.season.until}-ig.
+                {site.season.label}: {site.season.untilIg}.
               </p>
             </div>
           </div>

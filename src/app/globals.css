@@ -1111,7 +1111,7 @@ ol {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(ellipse 60% 55% at 50% 50%, rgba(15, 34, 55, 0.55), transparent 75%),
+    radial-gradient(ellipse 65% 60% at 50% 55%, rgba(15, 34, 55, 0.7), transparent 78%),
     rgba(15, 34, 55, 0.58);
 }
 
@@ -1124,8 +1124,10 @@ ol {
 }
 
 .band__content p {
-  max-width: 52ch;
-  color: rgba(250, 248, 244, 0.88);
+  max-width: 46ch;
+  font-size: 1.0625rem;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(10, 22, 40, 0.6), 0 2px 18px rgba(10, 22, 40, 0.85);
 }
 
 /* ---------- Cards ---------- */

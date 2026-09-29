@@ -110,6 +110,11 @@ export function BookingFlow() {
   };
 
   const chooseProgram = (id: ProgramId) => {
+    if (id === data.program) {
+      setDir("fwd");
+      setStepIndex(1);
+      return;
+    }
     // A new program starts from a clean slate; only contact details carry over.
     setData((d) => ({ ...emptyBooking, program: id, name: d.name, email: d.email, phone: d.phone, message: d.message, consent: d.consent }));
     setErrors({});
@@ -183,10 +188,8 @@ export function BookingFlow() {
 
   return (
     <div className="flow">
-      <div className="flow__progress" style={{ ["--steps" as string]: steps.length }} aria-hidden="true">
-        {steps.map((s, i) => (
-          <span key={s + i} data-done={i <= stepIndex} />
-        ))}
+      <div className="flow__progress" style={{ ["--steps" as string]: program ? steps.length : 1 }} aria-hidden="true">
+        {program ? steps.map((s, i) => <span key={s + i} data-done={i <= stepIndex} />) : <span data-done="false" />}
       </div>
       <div className="flow__stepline">
         <span>{program ? `${stepIndex + 1}. lépés / ${steps.length}` : "1. lépés"}</span>

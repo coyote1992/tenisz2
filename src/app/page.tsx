@@ -436,7 +436,7 @@ export default function HomePage() {
                 Pályabérleti díjak
               </h2>
               <p className="lead">
-                {site.season.label}, <strong>{site.season.until}-ig</strong>. Óradíjak pályánként, a foglalás
+                {site.season.label}, <strong>{site.season.untilIg}</strong>. Óradíjak pályánként, a foglalás
                 időpontja szerint.
               </p>
             </div>

@@ -6,7 +6,7 @@ export function SeasonBar() {
   return (
     <div className="season-bar">
       <span className="season-bar__long">
-        {site.season.label} {site.season.until}-ig · Őszi junior csoportok és személyi edzés ·{" "}
+        {site.season.label} {site.season.untilIg} · Őszi junior csoportok és személyi edzés ·{" "}
       </span>
       <Link href="/jelentkezes">
         Jelentkezés online

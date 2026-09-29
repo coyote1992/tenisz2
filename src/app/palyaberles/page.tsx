@@ -22,7 +22,7 @@ export default function CourtRentalPage() {
     <>
       <PageHero
         title="Pályabérlés a Normafánál."
-        lead={`Négy felújított szabadtéri salakpálya, erdő ölelésében. A szabad időpontokat a Hellán látod, és ott is foglalsz. ${site.season.label}: ${site.season.until}-ig.`}
+        lead={`Négy felújított szabadtéri salakpálya, erdő ölelésében. A szabad időpontokat a Hellán látod, és ott is foglalsz. ${site.season.label}: ${site.season.untilIg}.`}
         image="/images/aerial-courts-2.jpg"
         imageAlt="A négy salakpálya felülről, játékosokkal"
       >
@@ -44,7 +44,7 @@ export default function CourtRentalPage() {
               Pályabérleti díjak
             </h2>
             <p className="lead">
-              {site.season.label}, <strong>{site.season.until}-ig</strong>. Az óradíj pályánként értendő, és a
+              {site.season.label}, <strong>{site.season.untilIg}</strong>. Az óradíj pályánként értendő, és a
               foglalás időpontjától függ. A legkedvezőbb a hétköznap 10 és 14 óra közötti sáv és a hétvége.
             </p>
           </div>
