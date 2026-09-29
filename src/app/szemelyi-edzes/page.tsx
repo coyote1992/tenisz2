@@ -210,7 +210,7 @@ export default function PersonalTrainingPage() {
               Csoportos órák
             </Link>
           </div>
-          <div className="card-grid" style={{ ["--cols" as string]: 2 }}>
+          <div className="card-grid card-grid--2">
             <article className="card card--link">
               <div className="card__media">
                 <Image src="/images/studio-corner.jpg" alt="Edzőeszközök a stúdió sarkában" fill sizes="(max-width: 620px) 100vw, 50vw" style={{ objectPosition: "50% 65%" }} />

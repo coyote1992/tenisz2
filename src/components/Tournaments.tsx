@@ -29,6 +29,9 @@ export function Tournaments({ id }: { id?: string }) {
             <article className="event-card" key={t.name}>
               <div className="event-card__media">
                 <Image src={images[i]} alt="" fill sizes="(max-width: 620px) 100vw, (max-width: 900px) 50vw, 33vw" />
+                <span className="tag" style={{ position: "absolute", top: 14, left: 14, zIndex: 1 }}>
+                  Lezajlott
+                </span>
                 <h3 className="event-card__title">{t.name}</h3>
               </div>
               <div className="event-card__body">
@@ -37,12 +40,8 @@ export function Tournaments({ id }: { id?: string }) {
                   <strong>{t.date}</strong>
                 </span>
                 <span className="event-card__row">
-                  <Icon name="clock" size={16} />
-                  Kezdés {t.start}
-                </span>
-                <span className="event-card__row">
                   <Icon name="ball" size={16} />
-                  Nevezési díj {formatFt(t.fee)} / fő
+                  Nevezési díj volt: {formatFt(t.fee)} / fő
                 </span>
                 {"note" in t && t.note && <span className="event-card__row small">{t.note}</span>}
               </div>

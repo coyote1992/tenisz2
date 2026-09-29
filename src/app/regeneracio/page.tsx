@@ -37,7 +37,7 @@ export default function RecoveryPage() {
       </PageHero>
       <section className="section">
         <div className="container">
-          <div className="card-grid" style={{ ["--cols" as string]: 2 }}>
+          <div className="card-grid card-grid--2">
             {services.map((s) => (
               <div className="price-card" key={s.title}>
                 <span className="tag tag--light" style={{ justifySelf: "start" }}>

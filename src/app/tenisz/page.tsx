@@ -113,6 +113,29 @@ export default function TennisPage() {
               </tbody>
             </table>
           </div>
+          <ul className="schedule-list" aria-label="Junior csoportok heti órarendje">
+            {juniorStages.flatMap((stage) =>
+              stage.groups.map((g) => (
+                <li key={g.id}>
+                  <p className="rows__group">
+                    <span className={`dot dot--${stage.id}`} aria-hidden="true" />
+                    {g.name}
+                  </p>
+                  <ul className="rows">
+                    {g.slots.map((slot) => {
+                      const [day, time] = slot.split(" ");
+                      return (
+                        <li key={slot}>
+                          <span>{day}</span>
+                          <span>{time}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+              )),
+            )}
+          </ul>
           <p className="small muted" style={{ marginTop: 14 }}>
             A 2026 őszi jelentkezési lap szerinti időpontok. Változás esetén a jelentkezés után értesítünk.
           </p>
@@ -122,10 +145,10 @@ export default function TennisPage() {
       <section className="section section--white" id="felnott" aria-labelledby="adult-title">
         <div className="container split">
           <Frame
-            src="/images/forehand-pink.jpg"
-            alt="Játékos tenyeres ütés közben a salakpályán"
+            src="/images/coach-feeding.jpg"
+            alt="Edző labdát adogat a kosárból a salakpályán"
             ratio="land"
-            position="40% 50%"
+            position="50% 40%"
           />
           <div className="stack-m">
             <h2 id="adult-title" className="h2">
@@ -189,7 +212,7 @@ export default function TennisPage() {
         </div>
       </section>
 
-      <CtaBand image="/images/junior-rally.jpg" />
+      <CtaBand image="/images/footwork-drill.jpg" />
     </>
   );
 }

@@ -18,7 +18,7 @@ export function Frame({
   preload?: boolean;
 }) {
   return (
-    <figure style={{ margin: 0 }}>
+    <figure className="figure">
       <div className={`frame frame--${ratio}`} data-reveal>
         <Image src={src} alt={alt} fill sizes={sizes} preload={preload} style={position ? { objectPosition: position } : undefined} />
       </div>

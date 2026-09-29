@@ -17,7 +17,8 @@ export const site = {
   bank: { name: "Raiffeisen Bank Zrt.", account: "12001008-01723861-00100005" },
   season: {
     label: "Nyári pályaszezon",
-    until: "2026. október 12.",
+    // Without the closing period: every use appends a suffix ("-ig").
+    until: "2026. október 12",
   },
 } as const;
 
@@ -29,7 +30,7 @@ export const trainer = {
 
 // CONFIRM: the old footer listed H–P 7–20, hétvégén 7–19.
 export const openingHours = [
-  { days: "Hétfő – péntek", hours: "7:00 – 21:00 / 22:00" },
+  { days: "Hétfő – péntek", hours: "7:00 – 21:00, egyes napokon 22:00-ig" },
   { days: "Szombat – vasárnap", hours: "8:00 – 19:00" },
 ] as const;
 

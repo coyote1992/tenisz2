@@ -110,7 +110,8 @@ export function BookingFlow() {
   };
 
   const chooseProgram = (id: ProgramId) => {
-    setData((d) => ({ ...d, program: id, slots: [], days: [], dayparts: [] }));
+    // A new program starts from a clean slate; only contact details carry over.
+    setData((d) => ({ ...emptyBooking, program: id, name: d.name, email: d.email, phone: d.phone, message: d.message, consent: d.consent }));
     setErrors({});
     setDir("fwd");
     setStepIndex(1);
@@ -188,9 +189,7 @@ export function BookingFlow() {
         ))}
       </div>
       <div className="flow__stepline">
-        <span>
-          {stepIndex + 1}. lépés / {steps.length}
-        </span>
+        <span>{program ? `${stepIndex + 1}. lépés / ${steps.length}` : "1. lépés"}</span>
         {program && stepIndex > 0 && <span>{program.title}</span>}
       </div>
 
@@ -505,16 +504,12 @@ export function BookingFlow() {
           )}
         </div>
 
-        <div className="flow__nav">
-          {stepIndex > 0 ? (
+        {step !== "program" && (
+          <div className="flow__nav">
             <button type="button" className="flow__back" onClick={back}>
               <Icon name="arrowLeft" size={16} />
               Vissza
             </button>
-          ) : (
-            <span />
-          )}
-          {step !== "program" && (
             <button type="submit" className="btn" disabled={status === "sending"} aria-busy={status === "sending"}>
               {status === "sending" ? (
                 <>
@@ -530,8 +525,8 @@ export function BookingFlow() {
                 </>
               )}
             </button>
-          )}
-        </div>
+          </div>
+        )}
       </form>
     </div>
   );

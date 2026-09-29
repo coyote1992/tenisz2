@@ -166,6 +166,7 @@ export function groupName(id: string) {
 export function summaryLines(d: BookingData): [string, string][] {
   const program = programs.find((p) => p.id === d.program);
   const lines: [string, string][] = [];
+  const has = (s: StepId) => !!program?.steps.includes(s);
   if (program) lines.push(["Program", program.title]);
   if (d.program === "junior") {
     if (d.childName) lines.push(["Gyerek", `${d.childName}${d.childAge ? `, ${d.childAge} éves` : ""}`]);
@@ -174,12 +175,12 @@ export function summaryLines(d: BookingData): [string, string][] {
     if (d.group === "nem-tudom" && d.days.length) lines.push(["Napok", d.days.join(", ")]);
     lines.push(["Erőnlét, koordináció", d.fitness ? "Érdekel" : "Most nem"]);
   }
-  if (d.level) lines.push(["Szint", d.level]);
-  if (d.formats.length) lines.push(["Forma", d.formats.join(", ")]);
-  if (d.goals.length) lines.push(["Célok", d.goals.join(", ")]);
-  if (d.program !== "junior" && d.days.length) lines.push(["Napok", d.days.join(", ")]);
-  if (d.dayparts.length) lines.push(["Napszak", d.dayparts.join(", ")]);
-  if (d.interests.length) lines.push(["Érdeklődés", d.interests.join(", ")]);
+  if (has("level") && d.level) lines.push(["Szint", d.level]);
+  if (has("level") && d.formats.length) lines.push(["Forma", d.formats.join(", ")]);
+  if (has("goals") && d.goals.length) lines.push(["Célok", d.goals.join(", ")]);
+  if ((has("time") || has("weekdays")) && d.days.length) lines.push(["Napok", d.days.join(", ")]);
+  if (has("time") && d.dayparts.length) lines.push(["Napszak", d.dayparts.join(", ")]);
+  if (has("interest") && d.interests.length) lines.push(["Érdeklődés", d.interests.join(", ")]);
   return lines;
 }
 

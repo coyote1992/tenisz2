@@ -94,7 +94,8 @@ export function SiteFooter() {
                   <li key={l.href}>
                     {"external" in l && l.external ? (
                       <a href={l.href} target="_blank" rel="noopener">
-                        {l.label} ↗
+                        {l.label}
+                        <Icon name="arrowUpRight" size={13} style={{ display: "inline", verticalAlign: "-1px", marginLeft: 3 }} />
                       </a>
                     ) : (
                       <Link href={l.href}>{l.label}</Link>

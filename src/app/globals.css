@@ -86,6 +86,10 @@ body {
   color: var(--navy);
 }
 
+figure {
+  margin: 0;
+}
+
 img,
 video,
 svg {
@@ -1106,7 +1110,9 @@ ol {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: rgba(15, 34, 55, 0.58);
+  background:
+    radial-gradient(ellipse 60% 55% at 50% 50%, rgba(15, 34, 55, 0.55), transparent 75%),
+    rgba(15, 34, 55, 0.58);
 }
 
 .band__content {
@@ -1132,6 +1138,10 @@ ol {
 
 .card-grid--4 {
   --cols: 4;
+}
+
+.card-grid--2 {
+  --cols: 2;
 }
 
 @media (max-width: 1100px) {
@@ -1832,6 +1842,28 @@ ol {
   border-bottom: 0;
 }
 
+.schedule-list {
+  display: none;
+  list-style: none;
+  gap: 12px;
+}
+
+.schedule-list > li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  padding: 16px 18px;
+}
+
+@media (max-width: 720px) {
+  .schedule-wrap {
+    display: none;
+  }
+  .schedule-list {
+    display: grid;
+  }
+}
+
 .schedule td:empty::after {
   content: "–";
   color: var(--line-strong);
@@ -1988,8 +2020,20 @@ ol {
 .setting-sketch {
   width: 100%;
   max-width: 460px;
-  height: auto;
   margin-top: 28px;
+}
+
+.setting-sketch svg {
+  width: 100%;
+  height: auto;
+}
+
+.sketch-caption {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
 }
 
 .arc-sketch {

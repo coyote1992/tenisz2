@@ -15,40 +15,91 @@ export function HeroUnderline() {
   );
 }
 
+// Deterministic "pen" so the sketch looks hand-drawn but renders identically on server and client.
+function pen(seed: number) {
+  let t = seed;
+  const rand = () => {
+    t = (t + 0x6d2b79f5) | 0;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+  const j = (n: number) => (rand() - 0.5) * 2 * n;
+  // A stroke that overshoots its ends a little and bows slightly, like a pencil line.
+  return (x1: number, y1: number, x2: number, y2: number) => {
+    const len = Math.hypot(x2 - x1, y2 - y1) || 1;
+    const ux = (x2 - x1) / len;
+    const uy = (y2 - y1) / len;
+    const o1 = 2 + rand() * 4;
+    const o2 = 2 + rand() * 4;
+    const sx = x1 - ux * o1 + j(1);
+    const sy = y1 - uy * o1 + j(1);
+    const ex = x2 + ux * o2 + j(1);
+    const ey = y2 + uy * o2 + j(1);
+    const bow = j(Math.min(3, len / 40));
+    const cx = (sx + ex) / 2 - uy * bow;
+    const cy = (sy + ey) / 2 + ux * bow;
+    return `M${sx.toFixed(1)} ${sy.toFixed(1)}Q${cx.toFixed(1)} ${cy.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+  };
+}
+
 // Four clay courts seen from the drone: the club's plan, sketched.
 export function CourtsSketch({ className = "" }: { className?: string }) {
-  const court = (x: number, y: number, i: number) => (
-    <g key={i} transform={`translate(${x} ${y})`}>
-      <rect className="s-clay" x="0" y="0" width="120" height="230" rx="2" pathLength={1} style={{ ["--d" as string]: i * 180 }} stroke="currentColor" />
-      <path pathLength={1} style={{ ["--d" as string]: i * 180 + 300 }} d="M14 0v230M106 0v230M14 56h92M14 174h92M60 56v118" />
-      <path pathLength={1} style={{ ["--d" as string]: i * 180 + 500 }} d="M-6 115h132" strokeWidth="2" strokeDasharray="0" />
-    </g>
-  );
+  const W = 120;
+  const H = 230;
+  const courts = [0, 1, 2, 3].map((i) => {
+    const line = pen(11 + i * 7);
+    const x = i * 142;
+    const y = 10;
+    const outline = [
+      line(x, y, x + W, y),
+      line(x + W, y, x + W, y + H),
+      line(x + W, y + H, x, y + H),
+      line(x, y + H, x, y),
+    ];
+    const marks = [
+      line(x + 14, y, x + 14, y + H),
+      line(x + 106, y, x + 106, y + H),
+      line(x + 14, y + 56, x + 106, y + 56),
+      line(x + 14, y + 174, x + 106, y + 174),
+      line(x + 60, y + 56, x + 60, y + 174),
+    ];
+    const net = line(x - 6, y + H / 2, x + W + 6, y + H / 2);
+    return { outline, marks, net, i };
+  });
   return (
-    <svg
-      className={`sketch ${className}`}
-      viewBox="-20 -30 620 330"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      role="img"
-      aria-label="Vázlat: négy salakpálya egymás mellett"
-    >
-      {[0, 1, 2, 3].map((i) => court(i * 142, 20, i))}
-      <path
-        className="s-clay"
-        pathLength={1}
-        style={{ ["--d" as string]: 900 }}
-        d="M40 262c80 26 190 34 290 20s170-36 230-30"
+    <figure className={className}>
+      <svg
+        className="sketch"
+        viewBox="-20 -6 620 300"
+        fill="none"
         stroke="currentColor"
-        strokeDasharray="0"
-      />
-      <text x="0" y="-6" fill="currentColor" stroke="none" style={{ fontFamily: "var(--font-display)", fontSize: 19, fontStyle: "italic" }}>
-        négy salakpálya, a hegy tetején
-      </text>
-    </svg>
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        role="img"
+        aria-label="Vázlat: négy salakpálya egymás mellett"
+      >
+        {courts.map(({ outline, marks, net, i }) => (
+          <g key={i}>
+            {outline.map((d, k) => (
+              <path key={k} d={d} pathLength={1} className="s-clay" strokeWidth={1.6} style={{ ["--d" as string]: i * 160 + k * 90 }} />
+            ))}
+            {marks.map((d, k) => (
+              <path key={k} d={d} pathLength={1} strokeWidth={1.1} style={{ ["--d" as string]: i * 160 + 360 + k * 70 }} />
+            ))}
+            <path d={net} pathLength={1} strokeWidth={2} style={{ ["--d" as string]: i * 160 + 700 }} />
+          </g>
+        ))}
+        <path
+          className="s-clay"
+          pathLength={1}
+          strokeWidth={1.3}
+          style={{ ["--d" as string]: 1200 }}
+          d="M40 268c80 22 190 28 290 16s170-30 230-26"
+        />
+      </svg>
+      <figcaption className="sketch-caption">Négy salakpálya, a hegy tetején.</figcaption>
+    </figure>
   );
 }
 

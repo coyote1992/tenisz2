@@ -13,7 +13,8 @@ import { homeFaq } from "@/content/faq";
 import { courtPrices, formatFt, goodMorningClub, juniorStages, site, trainer } from "@/content/site";
 
 export default function HomePage() {
-  const cheapest = Math.min(...courtPrices.flatMap((c) => c.rows.map((r) => r.price)));
+  const casualFrom = Math.min(...courtPrices.find((c) => c.kind === "Alkalmi")!.rows.map((r) => r.price));
+  const passFrom = Math.min(...courtPrices.flatMap((c) => c.rows.map((r) => r.price)));
   return (
     <>
       {/* Hero */}
@@ -48,7 +49,7 @@ export default function HomePage() {
                 <Icon name="arrowUpRight" className="arrow-ur" />
               </span>
               <span className="path-card__text">
-                Óradíj {formatFt(cheapest)}-tól. Szabad időpontok és foglalás a Hella rendszerében.
+                Óradíj {formatFt(casualFrom)}-tól, bérlettel {formatFt(passFrom)}-tól. Foglalás a Hellán.
               </span>
             </a>
             <Link className="path-card" href="/jelentkezes">
@@ -254,7 +255,7 @@ export default function HomePage() {
             </article>
           </div>
           <div className="strip">
-            <span className="meta">Tenisz felnőtteknek · kezdőtől versenyzőig</span>
+            <h3 className="h4">Tenisz felnőtteknek, kezdőtől versenyzőig</h3>
             <p className="card__text" style={{ maxWidth: "70ch" }}>
               Most kezdenéd, vagy évek után térnél vissza? Írd meg a jelentkezésben, hol tartasz és mit
               szeretnél, és ajánlunk hozzá edzőt és időpontot.
@@ -378,7 +379,7 @@ export default function HomePage() {
       {/* Statement band */}
       <section className="band band--shade on-dark" aria-labelledby="band-title">
         <div className="band__media">
-          <Image src="/images/aerial-tower.jpg" alt="" fill sizes="100vw" quality={70} />
+          <Image src="/images/junior-group.jpg" alt="" fill sizes="100vw" quality={75} style={{ objectPosition: "50% 35%" }} />
         </div>
         <div className="container band__content">
           <h2 id="band-title" className="h2 h2--xl" style={{ maxWidth: "16ch" }}>
